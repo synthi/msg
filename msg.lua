@@ -754,7 +754,6 @@ function handle_voice_trigger(x, y, z)
   if z == 1 then
     if y >= voices_start_row and y < control_row then
       local voice = y - (voices_start_row - 1)
-      selected_voice = voice
       params:set(voice .. "loop_on", 0)
       local new_position = (x - 1) / 16
       if alt and gates[voice] > 0 then
