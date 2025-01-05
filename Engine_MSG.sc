@@ -390,9 +390,11 @@ Engine_MSG : CroneEngine {
 			var freqs, source, drySignal, bands, modulations, ampMod, panMod, qMod, adjustedVolume, wetSignal, out_signal;
 
 			// Define the center frequencies of each band
-			freqs = [50, 125, 185, 270, 385, 540, 765, 1100, 1550, 2150, 3000, 4250, 6000, 8500, 12000, 17000];
-
-			// Input source from the bus (stereo)
+			//freqs = [50, 125, 185, 270, 385, 540, 765, 1100, 1550, 2150, 3000, 4250, 6000, 8500, 12000, 17000];
+                        //option - //freqs = [50, 79, 130, 200, 320, 500, 790, 1300, 2000, 2500, 3200, 5000, 6300, 7900, 10000, 12600];
+			// Bark style freqs:
+                        freqs = [60, 150, 250, 350, 570, 700, 840, 1170, 1600, 2150, 2900, 4000, 5800, 7000, 8500, 10500];
+                        // Input source from the bus (stereo)
 			source = In.ar(in, 2);
 			
 			// Dry signal (unprocessed)
