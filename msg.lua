@@ -1003,46 +1003,46 @@ end
 function init_filterbank_params()
   params:add_group("FILTERBANK", 14)
 
-  params:add_taper("filterbank_amp", "Filterbank Amp", 0, 1, 1, 0, "")
+  params:add_taper("filterbank_amp", "FB Amp", 0, 1, 1, 0, "")
   params:set_action("filterbank_amp", function(value) engine.filterbank_amp(value) end)
 
-  params:add_taper("filterbank_gate", "Filterbank Gate", 0, 1, 1, 0, "")
+  params:add_taper("filterbank_gate", "FB Gate", 0, 1, 1, 0, "")
   params:set_action("filterbank_gate", function(value) engine.filterbank_gate(value) end)
 
-  params:add_taper("filterbank_spread", "Filterbank Spread", 0, 1, 1, 0, "")
+  params:add_taper("filterbank_spread", "FB Spread", 0, 1, 1, 0, "")
   params:set_action("filterbank_spread", function(value) engine.filterbank_spread(value) end)
 
-  params:add_taper("filterbank_q", "Filterbank Q", 0.0001, 1, 0.1, 0, "")
+  params:add_taper("filterbank_q", "FB Q", 0.0001, 1, 0.1, 0, "")
   params:set_action("filterbank_q", function(value) engine.filterbank_q(value) end)
 
-  params:add_taper("filterbank_modRate", "Filterbank Modulation Rate", 0.1, 10, 0.2, 0, "")
+  params:add_taper("filterbank_modRate", "FB Mod Rate", 0.1, 10, 0.2, 0, "")
   params:set_action("filterbank_modRate", function(value) engine.filterbank_modRate(value) end)
 
-  params:add_taper("filterbank_depth", "Filterbank Depth", 0, 1, 0.5, 0, "")
+  params:add_taper("filterbank_depth", "FB Mod Depth", 0, 1, 0.5, 0, "")
   params:set_action("filterbank_depth", function(value) engine.filterbank_depth(value) end)
 
-  params:add_taper("filterbank_qModRate", "Filterbank Q Modulation Rate", 0.1, 10, 0.1, 0, "")
+  params:add_taper("filterbank_qModRate", "FB Q Mod Rate", 0.1, 10, 0.1, 0, "")
   params:set_action("filterbank_qModRate", function(value) engine.filterbank_qModRate(value) end)
 
-  params:add_taper("filterbank_qModDepth", "Filterbank Q Modulation Depth", 0, 1, 0.01, 0, "")
+  params:add_taper("filterbank_qModDepth", "FB Q Mod Depth", 0, 1, 0.01, 0, "")
   params:set_action("filterbank_qModDepth", function(value) engine.filterbank_qModDepth(value) end)
 
-  params:add_taper("filterbank_panModRate", "Filterbank Pan Modulation Rate", 0.1, 10, 0.4, 0, "")
+  params:add_taper("filterbank_panModRate", "FB Pan Mod Rate", 0.1, 10, 0.4, 0, "")
   params:set_action("filterbank_panModRate", function(value) engine.filterbank_panModRate(value) end)
 
-  params:add_taper("filterbank_panModDepth", "Filterbank Pan Modulation Depth", 0, 1, 1, 0, "")
+  params:add_taper("filterbank_panModDepth", "FB Pan Mod Depth", 0, 1, 1, 0, "")
   params:set_action("filterbank_panModDepth", function(value) engine.filterbank_panModDepth(value) end)
 
-  params:add_taper("filterbank_wet", "Filterbank Wet Level", 0, 1, 1, 0, "")
+  params:add_taper("filterbank_wet", "FB Wet Level", 0, 1, 1, 0, "")
   params:set_action("filterbank_wet", function(value) engine.filterbank_wet(value) end)
 
-  params:add_taper("filterbank_reverb", "Filterbank Reverb Send", 0, 1, 0, 0, "")
+  params:add_taper("filterbank_reverb", "FB Reverb Send", 0, 1, 0, 0, "")
   params:set_action("filterbank_reverb", function(value) engine.filterbank_reverb_level(value) end)
 
-  params:add_taper("filterbank_delay", "Filterbank Delay Send", 0, 1, 0, 0, "")
+  params:add_taper("filterbank_delay", "FB Delay Send", 0, 1, 0, 0, "")
   params:set_action("filterbank_delay", function(value) engine.filterbank_delay_level(value) end)
 
-  params:add_taper("filterbank_saturation", "Filterbank Saturation Send", 0, 1, 0, 0, "")
+  params:add_taper("filterbank_saturation", "FB Saturation Send", 0, 1, 0, 0, "")
   params:set_action("filterbank_saturation", function(value) engine.filterbank_saturation_level(value) end)
 end
 
