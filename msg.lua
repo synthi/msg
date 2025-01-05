@@ -1012,7 +1012,7 @@ function init_filterbank_params()
   params:add_taper("filterbank_spread", "Filterbank Spread", 0, 1, 1, 0, "")
   params:set_action("filterbank_spread", function(value) engine.filterbank_spread(value) end)
 
-  params:add_taper("filterbank_q", "Filterbank Q", 0.0001, 1, 0.1, 0, "")
+  params:add_taper("filterbank_q", "Filterbank Q", 0.0001, 0.5, 0.01, 0, "")
   params:set_action("filterbank_q", function(value) engine.filterbank_q(value) end)
 
   params:add_taper("filterbank_modRate", "Filterbank Modulation Rate", 0.1, 10, 0.2, 0, "")
